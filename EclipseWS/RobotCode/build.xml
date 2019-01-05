@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="FRC Deployment" default="deploy">
+	
+  <property name="team-number" value="217"/>
+  <property name="target" value="10.2.17.2"/>
+	
+  <property file="D:/ODrive/OneDrive/Robotics/2019/TeamRoot/EclipseWS/RobotCode/Ant/wpilib.properties"/>
+  <property file="build.properties"/>
+  <property file="D:/ODrive/OneDrive/Robotics/2019/TeamRoot/EclipseWS/RobotCode/Ant/build.properties"/>
+
+  <import file="D:/ODrive/OneDrive/Robotics/2019/TeamRoot/EclipseWS/RobotCode/Ant/build.xml"/>
+
+</project>

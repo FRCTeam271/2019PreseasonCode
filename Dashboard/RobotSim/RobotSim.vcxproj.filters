@@ -1,0 +1,420 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Header Files\CodeBase">
+      <UniqueIdentifier>{de4deb08-54fb-4cd4-af6e-c83f7141274f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\CodeBase\Generic">
+      <UniqueIdentifier>{c23f843f-74f6-40eb-8b3f-61f2d424649d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\CodeBase\Robot">
+      <UniqueIdentifier>{73f7a1c6-b573-462b-a38d-229032e3e3da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\CodeBase\Generic\BaseObjects">
+      <UniqueIdentifier>{3acf121e-8456-459f-96b6-6f585f99f7c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\CodeBase\Generic\BaseObjects\Components">
+      <UniqueIdentifier>{db726076-f203-494f-8135-da0defe2ce72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\CodeBase\Generic\BaseObjects\Sensors">
+      <UniqueIdentifier>{f7878199-f080-4184-a899-cbc25a6ecd6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\CodeBase\Generic\BaseObjects\SubSystems">
+      <UniqueIdentifier>{51fba3be-dcaa-4452-91c1-2e2cb863b17c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\CodeBase\Generic\BaseObjects\SubSystems\Auto">
+      <UniqueIdentifier>{2cebdaed-2135-4b34-a114-edef951bd789}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\CodeBase\Generic\BaseObjects\SubSystems\Auto\AutoActions">
+      <UniqueIdentifier>{3faf6292-50df-4624-bc84-39aa2c2b6ed4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CodeBase">
+      <UniqueIdentifier>{27e18f5d-fa3e-4136-b865-a96d2fb69383}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CodeBase\Generic">
+      <UniqueIdentifier>{f17a4784-35ab-4f41-99f8-7ecc4d253893}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CodeBase\Generic\BaseObjects">
+      <UniqueIdentifier>{29f2b650-6804-4422-8719-9c08f02962c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CodeBase\Generic\BaseObjects\Components">
+      <UniqueIdentifier>{dd35764b-d02c-4686-b64c-0820d90f9f9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CodeBase\Generic\BaseObjects\SubSystems">
+      <UniqueIdentifier>{0d8617a6-55f5-4c94-98db-90a39f332df1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CodeBase\Generic\BaseObjects\Sensors">
+      <UniqueIdentifier>{246e2702-9993-492e-a7bf-513f0e287a61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CodeBase\Generic\BaseObjects\SubSystems\Auto">
+      <UniqueIdentifier>{01167813-0791-4c02-a711-a34de2c9a03b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CodeBase\Robot">
+      <UniqueIdentifier>{23d2a3fd-b7b0-4176-bafa-18100e9d3a9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CodeBase\Robot\Auto">
+      <UniqueIdentifier>{bfd0a5bf-885b-4e9f-a535-e7a77be31a8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CodeBase\Robot\Auto\AutoActions">
+      <UniqueIdentifier>{8419e8fe-7c26-400f-a36a-58dd6ceafd45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CodeBase\Robot\Auto\AutoModes">
+      <UniqueIdentifier>{7c98a210-5da4-432d-ad48-61fda4cc865c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\CodeBase\Robot\Shifters">
+      <UniqueIdentifier>{2c04a38f-b1f4-4de7-8540-59186fd1941e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CodeBase\Robot\Shifters">
+      <UniqueIdentifier>{24a4cd58-0da9-4e17-af53-0586b4fc41a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\RobotSim">
+      <UniqueIdentifier>{352b45a8-e4ed-410b-8f4d-9811ed479eac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\RobotSim">
+      <UniqueIdentifier>{2e64c304-6ee1-40eb-aff4-c36acc87977c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\CodeBase\Robot\Auto">
+      <UniqueIdentifier>{fc00ceb1-3ba7-4034-be6f-51f936516feb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\CodeBase\Robot\SubSystems">
+      <UniqueIdentifier>{0dc31eb0-a70e-4695-9e25-b46505447148}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CodeBase\Robot\SubSystems">
+      <UniqueIdentifier>{1091b916-f06c-490d-a4c6-5fcc585301f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CodeBase\Generic\NetworkObjects">
+      <UniqueIdentifier>{32b9a3a3-2fcb-42f5-821a-5b24e613b745}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\CodeBase\Generic\NetworkObjects">
+      <UniqueIdentifier>{3032e04e-b9cf-43d7-b23d-2e4ba0bcd26f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\CodeBase\Generic\BaseObjects\Sensors\Team271_EM7180.cpp">
+      <Filter>Source Files\CodeBase\Generic\BaseObjects\Sensors</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CodeBase\Generic\BaseObjects\Sensors\Team271_IMU.cpp">
+      <Filter>Source Files\CodeBase\Generic\BaseObjects\Sensors</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CodeBase\Generic\BaseObjects\Sensors\Team271_NavX.cpp">
+      <Filter>Source Files\CodeBase\Generic\BaseObjects\Sensors</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CodeBase\Generic\BaseObjects\Sensors\Team271_Sensor.cpp">
+      <Filter>Source Files\CodeBase\Generic\BaseObjects\Sensors</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CodeBase\Generic\BaseObjects\Sensors\Team271_SensorSRX.cpp">
+      <Filter>Source Files\CodeBase\Generic\BaseObjects\Sensors</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CodeBase\Generic\BaseObjects\Team271_Base.cpp">
+      <Filter>Source Files\CodeBase\Generic\BaseObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CodeBase\Generic\Team271_Input.cpp">
+      <Filter>Source Files\CodeBase\Generic\BaseObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CodeBase\Generic\Team271_Logger.cpp">
+      <Filter>Source Files\CodeBase\Generic\BaseObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CodeBase\Generic\BaseObjects\SubSystems\Auto\Team271_AutoAction.cpp">
+      <Filter>Source Files\CodeBase\Generic\BaseObjects\SubSystems\Auto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CodeBase\Generic\BaseObjects\SubSystems\Auto\Team271_AutoActionList.cpp">
+      <Filter>Source Files\CodeBase\Generic\BaseObjects\SubSystems\Auto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CodeBase\Generic\BaseObjects\SubSystems\Auto\Team271_AutoMode.cpp">
+      <Filter>Source Files\CodeBase\Generic\BaseObjects\SubSystems\Auto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CodeBase\Generic\BaseObjects\Components\Team271_PWM.cpp">
+      <Filter>Source Files\CodeBase\Generic\BaseObjects\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CodeBase\Generic\BaseObjects\Components\Team271_PDP.cpp">
+      <Filter>Source Files\CodeBase\Generic\BaseObjects\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CodeBase\Generic\BaseObjects\Components\Team271_PCM.cpp">
+      <Filter>Source Files\CodeBase\Generic\BaseObjects\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CodeBase\Generic\BaseObjects\Components\Team271_Motor.cpp">
+      <Filter>Source Files\CodeBase\Generic\BaseObjects\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CodeBase\Generic\BaseObjects\Components\Team271_IO.cpp">
+      <Filter>Source Files\CodeBase\Generic\BaseObjects\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CodeBase\Generic\BaseObjects\Components\Team271_I2C.cpp">
+      <Filter>Source Files\CodeBase\Generic\BaseObjects\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CodeBase\Generic\BaseObjects\Components\Team271_SPI.cpp">
+      <Filter>Source Files\CodeBase\Generic\BaseObjects\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CodeBase\Generic\BaseObjects\Components\Team271_Solenoid.cpp">
+      <Filter>Source Files\CodeBase\Generic\BaseObjects\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CodeBase\Generic\BaseObjects\SubSystems\Auto\Team271_Auto.cpp">
+      <Filter>Source Files\CodeBase\Generic\BaseObjects\SubSystems\Auto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CodeBase\Generic\BaseObjects\SubSystems\Team271_Robot.cpp">
+      <Filter>Source Files\CodeBase\Generic\BaseObjects\SubSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CodeBase\Generic\BaseObjects\SubSystems\Team271_Transmission.cpp">
+      <Filter>Source Files\CodeBase\Generic\BaseObjects\SubSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CodeBase\Generic\BaseObjects\SubSystems\Team271_Shifter.cpp">
+      <Filter>Source Files\CodeBase\Generic\BaseObjects\SubSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CodeBase\Robot\2018Updated\Auto\AutoModes\Auto9.cpp">
+      <Filter>Source Files\CodeBase\Robot\Auto\AutoModes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CodeBase\Robot\2018Updated\Auto\AutoModes\Auto0.cpp">
+      <Filter>Source Files\CodeBase\Robot\Auto\AutoModes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CodeBase\Robot\2018Updated\Auto\AutoModes\Auto1.cpp">
+      <Filter>Source Files\CodeBase\Robot\Auto\AutoModes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CodeBase\Robot\2018Updated\Auto\AutoModes\Auto2.cpp">
+      <Filter>Source Files\CodeBase\Robot\Auto\AutoModes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CodeBase\Robot\2018Updated\Auto\AutoModes\Auto3.cpp">
+      <Filter>Source Files\CodeBase\Robot\Auto\AutoModes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CodeBase\Robot\2018Updated\Auto\AutoModes\Auto4.cpp">
+      <Filter>Source Files\CodeBase\Robot\Auto\AutoModes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CodeBase\Robot\2018Updated\Auto\AutoModes\Auto5.cpp">
+      <Filter>Source Files\CodeBase\Robot\Auto\AutoModes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CodeBase\Robot\2018Updated\Auto\AutoModes\Auto6.cpp">
+      <Filter>Source Files\CodeBase\Robot\Auto\AutoModes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CodeBase\Robot\2018Updated\Auto\AutoModes\Auto7.cpp">
+      <Filter>Source Files\CodeBase\Robot\Auto\AutoModes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CodeBase\Robot\2018Updated\Auto\AutoModes\Auto8.cpp">
+      <Filter>Source Files\CodeBase\Robot\Auto\AutoModes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CodeBase\Robot\2018Updated\Auto\AutoActions\Team271_AutoActionDrive.cpp">
+      <Filter>Source Files\CodeBase\Robot\Auto\AutoActions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CodeBase\Robot\2018Updated\Auto\AutoActions\Team271_AutoActionDriveGame.cpp">
+      <Filter>Source Files\CodeBase\Robot\Auto\AutoActions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CodeBase\Robot\2018Updated\Auto\AutoActions\Team271_AutoActionLadder.cpp">
+      <Filter>Source Files\CodeBase\Robot\Auto\AutoActions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ThreadNetwork.cpp">
+      <Filter>Source Files\RobotSim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CodeBase\Generic\Team271_Utilities.cpp">
+      <Filter>Source Files\CodeBase\Generic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CodeBase\Robot\2018Updated\Shifters\Team271_Shifter_Drive.cpp">
+      <Filter>Source Files\CodeBase\Robot\Shifters</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CodeBase\Robot\2018Updated\Shifters\Team271_Shifter_Ladder.cpp">
+      <Filter>Source Files\CodeBase\Robot\Shifters</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RobotSim.cpp">
+      <Filter>Source Files\RobotSim</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files\RobotSim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CodeBase\Robot\2018Updated\Team271_Globals.cpp">
+      <Filter>Source Files\CodeBase\Robot</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CodeBase\Robot\2018Updated\Team271_MainLoop.cpp">
+      <Filter>Source Files\CodeBase\Robot</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CodeBase\Robot\2018Updated\SubSystems\Team271_Arm.cpp">
+      <Filter>Source Files\CodeBase\Robot\SubSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CodeBase\Robot\2018Updated\SubSystems\Team271_Drive.cpp">
+      <Filter>Source Files\CodeBase\Robot\SubSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CodeBase\Robot\2018Updated\SubSystems\Team271_Herder.cpp">
+      <Filter>Source Files\CodeBase\Robot\SubSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CodeBase\Robot\2018Updated\SubSystems\Team271_Ladder.cpp">
+      <Filter>Source Files\CodeBase\Robot\SubSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CodeBase\Generic\NetworkObjects\Team271_NetworkObject.cpp">
+      <Filter>Source Files\CodeBase\Generic\NetworkObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CodeBase\Generic\BaseObjects\Team271_BaseManager.cpp">
+      <Filter>Source Files\CodeBase\Generic\BaseObjects</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="RobotSim.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="RobotSim.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\CodeBase\Generic\Team271_Logger.h">
+      <Filter>Header Files\CodeBase\Generic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CodeBase\Generic\Team271_Input.h">
+      <Filter>Header Files\CodeBase\Generic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CodeBase\Generic\Team271_Includes_Generic.h">
+      <Filter>Header Files\CodeBase\Generic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CodeBase\Generic\BaseObjects\Team271_Base.h">
+      <Filter>Header Files\CodeBase\Generic\BaseObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CodeBase\Generic\BaseObjects\Team271_Includes_Base.h">
+      <Filter>Header Files\CodeBase\Generic\BaseObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CodeBase\Generic\BaseObjects\Sensors\Team271_EM7180.h">
+      <Filter>Header Files\CodeBase\Generic\BaseObjects\Sensors</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CodeBase\Generic\BaseObjects\Sensors\Team271_IMU.h">
+      <Filter>Header Files\CodeBase\Generic\BaseObjects\Sensors</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CodeBase\Generic\BaseObjects\Sensors\Team271_NavX.h">
+      <Filter>Header Files\CodeBase\Generic\BaseObjects\Sensors</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CodeBase\Generic\BaseObjects\Sensors\Team271_Sensor.h">
+      <Filter>Header Files\CodeBase\Generic\BaseObjects\Sensors</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CodeBase\Generic\BaseObjects\Sensors\Team271_SensorSRX.h">
+      <Filter>Header Files\CodeBase\Generic\BaseObjects\Sensors</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CodeBase\Generic\BaseObjects\Components\Team271_I2C.h">
+      <Filter>Header Files\CodeBase\Generic\BaseObjects\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CodeBase\Generic\BaseObjects\Components\Team271_IO.h">
+      <Filter>Header Files\CodeBase\Generic\BaseObjects\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CodeBase\Generic\BaseObjects\Components\Team271_Motor.h">
+      <Filter>Header Files\CodeBase\Generic\BaseObjects\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CodeBase\Generic\BaseObjects\Components\Team271_PCM.h">
+      <Filter>Header Files\CodeBase\Generic\BaseObjects\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CodeBase\Generic\BaseObjects\Components\Team271_PDP.h">
+      <Filter>Header Files\CodeBase\Generic\BaseObjects\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CodeBase\Generic\BaseObjects\Components\Team271_PWM.h">
+      <Filter>Header Files\CodeBase\Generic\BaseObjects\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CodeBase\Generic\BaseObjects\Components\Team271_Solenoid.h">
+      <Filter>Header Files\CodeBase\Generic\BaseObjects\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CodeBase\Generic\BaseObjects\Components\Team271_SPI.h">
+      <Filter>Header Files\CodeBase\Generic\BaseObjects\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CodeBase\Generic\BaseObjects\SubSystems\Team271_Robot.h">
+      <Filter>Header Files\CodeBase\Generic\BaseObjects\SubSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CodeBase\Generic\BaseObjects\SubSystems\Team271_Shifter.h">
+      <Filter>Header Files\CodeBase\Generic\BaseObjects\SubSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CodeBase\Generic\BaseObjects\SubSystems\Team271_Transmission.h">
+      <Filter>Header Files\CodeBase\Generic\BaseObjects\SubSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CodeBase\Generic\BaseObjects\SubSystems\Auto\Team271_Auto.h">
+      <Filter>Header Files\CodeBase\Generic\BaseObjects\SubSystems\Auto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CodeBase\Generic\BaseObjects\SubSystems\Auto\Team271_AutoActionList.h">
+      <Filter>Header Files\CodeBase\Generic\BaseObjects\SubSystems\Auto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CodeBase\Generic\BaseObjects\SubSystems\Auto\Team271_AutoAction.h">
+      <Filter>Header Files\CodeBase\Generic\BaseObjects\SubSystems\Auto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CodeBase\Generic\BaseObjects\SubSystems\Auto\Team271_AutoMode.h">
+      <Filter>Header Files\CodeBase\Generic\BaseObjects\SubSystems\Auto</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Team271_Config.h">
+      <Filter>Header Files\RobotSim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CodeBase\Generic\Team271_Utilities.h">
+      <Filter>Header Files\CodeBase\Generic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CodeBase\Robot\2018Updated\Shifters\Team271_Shifter_Drive.h">
+      <Filter>Header Files\CodeBase\Robot\Shifters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CodeBase\Robot\2018Updated\Shifters\Team271_Shifter_Ladder.h">
+      <Filter>Header Files\CodeBase\Robot\Shifters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CodeBase\Robot\2018Updated\Team271_Constants.h">
+      <Filter>Header Files\CodeBase\Robot</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CodeBase\Robot\2018Updated\Team271_Globals.h">
+      <Filter>Header Files\CodeBase\Robot</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CodeBase\Robot\2018Updated\Team271_Includes.h">
+      <Filter>Header Files\CodeBase\Robot</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CodeBase\Robot\2018Updated\Team271_MainLoop.h">
+      <Filter>Header Files\CodeBase\Robot</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CodeBase\Robot\2018Updated\Auto\AutoActions\Team271_AutoActionDrive.h">
+      <Filter>Header Files\CodeBase\Robot\Auto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CodeBase\Robot\2018Updated\Auto\AutoActions\Team271_AutoActionDriveGame.h">
+      <Filter>Header Files\CodeBase\Robot\Auto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CodeBase\Robot\2018Updated\Auto\AutoActions\Team271_AutoActionLadder.h">
+      <Filter>Header Files\CodeBase\Robot\Auto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CodeBase\Robot\2018Updated\SubSystems\Team271_Arm.h">
+      <Filter>Header Files\CodeBase\Robot\SubSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CodeBase\Robot\2018Updated\SubSystems\Team271_Drive.h">
+      <Filter>Header Files\CodeBase\Robot\SubSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CodeBase\Robot\2018Updated\SubSystems\Team271_Herder.h">
+      <Filter>Header Files\CodeBase\Robot\SubSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CodeBase\Robot\2018Updated\SubSystems\Team271_Ladder.h">
+      <Filter>Header Files\CodeBase\Robot\SubSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>Header Files\RobotSim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CodeBase\Generic\NetworkObjects\Team271_NetworkObject.h">
+      <Filter>Header Files\CodeBase\Generic\NetworkObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CodeBase\Generic\BaseObjects\Team271_BaseManager.h">
+      <Filter>Header Files\CodeBase\Generic\BaseObjects</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="include\ThreadNetwork.h">
+      <Filter>Header Files\RobotSim</Filter>
+    </QtMoc>
+    <QtMoc Include="include\RobotSim.h">
+      <Filter>Header Files\RobotSim</Filter>
+    </QtMoc>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,335 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6F1ACCC2-3DC6-413D-8D87-F50682DAA065}</ProjectGuid>
+    <Keyword>Qt4VSv1.0</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup Condition="'$(QtMsBuild)'=='' or !Exists('$(QtMsBuild)\qt.targets')">
+    <QtMsBuild>$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IncludePath>..\..\CodeBase;..\..\CodeBase\_Libs\zmq\include;..\..\CodeBase\Robot\2018Updated;$(IncludePath)</IncludePath>
+    <LibraryPath>..\..\CodeBase\_Libs\zmq\bin\Win32\Debug\v141\dynamic;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IncludePath>..\..\CodeBase;..\..\CodeBase\_Libs\zmq\include;..\..\CodeBase\_LibsFRC;..\..\CodeBase\_LibsFRC\ctre\include;..\..\CodeBase\Robot\2018Updated;$(IncludePath)</IncludePath>
+    <LibraryPath>..\..\CodeBase\_Libs\zmq\bin\x64\Debug\v141\dynamic;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IncludePath>..\..\CodeBase;..\..\CodeBase\_Libs\zmq\include;..\..\CodeBase\_LibsFRC;..\..\CodeBase\Robot\2018Updated;$(IncludePath)</IncludePath>
+    <LibraryPath>..\..\CodeBase\_Libs\zmq\bin\Win32\Release\v141\dynamic;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IncludePath>..\..\CodeBase;..\..\CodeBase\_Libs\zmq\include;..\..\CodeBase\_LibsFRC;..\..\CodeBase\Robot\2018Updated;$(IncludePath)</IncludePath>
+    <LibraryPath>..\..\CodeBase\_Libs\zmq\bin\x64\Release\v141\dynamic;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')">
+    <Import Project="$(QtMsBuild)\qt.props" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>CTR_EXCLUDE_WPILIB_CLASSES;NOMINMAX;QT_QML_DEBUG;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;QT_CHARTS_LIB;QT_CORE_LIB;QT_DATAVISUALIZATION_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\GeneratedFiles;.;.\include;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCharts;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtDataVisualization;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWidgets;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>qtmaind.lib;libzmq.lib;Qt5Chartsd.lib;Qt5Cored.lib;Qt5DataVisualizationd.lib;Qt5Guid.lib;Qt5Widgetsd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <QtMoc>
+      <OutputFile>.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</OutputFile>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <IncludePath>.\GeneratedFiles;.;.\include;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCharts;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtDataVisualization;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWidgets;%(AdditionalIncludeDirectories)</IncludePath>
+      <Define>CTR_EXCLUDE_WPILIB_CLASSES;NOMINMAX;QT_QML_DEBUG;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;QT_CHARTS_LIB;QT_CORE_LIB;QT_DATAVISUALIZATION_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;%(PreprocessorDefinitions)</Define>
+    </QtMoc>
+    <QtUic>
+      <ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription>
+      <OutputFile>.\GeneratedFiles\ui_%(Filename).h</OutputFile>
+    </QtUic>
+    <QtRcc>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <OutputFile>.\GeneratedFiles\qrc_%(Filename).cpp</OutputFile>
+    </QtRcc>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>CTR_EXCLUDE_WPILIB_CLASSES;NOMINMAX;QDESIGNER_EXPORT_WIDGETS;QT_QML_DEBUG;UNICODE;_UNICODE;WIN32;WIN64;QT_CHARTS_LIB;QT_CORE_LIB;QT_DATAVISUALIZATION_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\GeneratedFiles;.;.\include;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCharts;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtDataVisualization;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWidgets;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>qtmaind.lib;libzmq.lib;Qt5Chartsd.lib;Qt5Cored.lib;Qt5DataVisualizationd.lib;Qt5Guid.lib;Qt5Widgetsd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <TargetMachine>MachineX64</TargetMachine>
+      <AdditionalOptions> /SUBSYSTEM:WINDOWS</AdditionalOptions>
+    </Link>
+    <QtMoc>
+      <OutputFile>.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</OutputFile>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <IncludePath>.\GeneratedFiles;.;.\include;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCharts;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtDataVisualization;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWidgets;%(AdditionalIncludeDirectories)</IncludePath>
+      <Define>CTR_EXCLUDE_WPILIB_CLASSES;NOMINMAX;QDESIGNER_EXPORT_WIDGETS;QT_QML_DEBUG;UNICODE;_UNICODE;WIN32;WIN64;QT_CHARTS_LIB;QT_CORE_LIB;QT_DATAVISUALIZATION_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;%(PreprocessorDefinitions)</Define>
+    </QtMoc>
+    <QtUic>
+      <ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription>
+      <OutputFile>.\GeneratedFiles\ui_%(Filename).h</OutputFile>
+    </QtUic>
+    <QtRcc>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <OutputFile>.\GeneratedFiles\qrc_%(Filename).cpp</OutputFile>
+    </QtRcc>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>CTR_EXCLUDE_WPILIB_CLASSES;NOMINMAX;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;QT_NO_DEBUG;NDEBUG;QT_CHARTS_LIB;QT_CORE_LIB;QT_DATAVISUALIZATION_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\GeneratedFiles;.;.\include;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCharts;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtDataVisualization;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWidgets;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat />
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalDependencies>qtmain.lib;libzmq.lib;Qt5Charts.lib;Qt5Core.lib;Qt5DataVisualization.lib;Qt5Gui.lib;Qt5Widgets.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <QtMoc>
+      <OutputFile>.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</OutputFile>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <IncludePath>.\GeneratedFiles;.;.\include;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCharts;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtDataVisualization;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWidgets;%(AdditionalIncludeDirectories)</IncludePath>
+      <Define>CTR_EXCLUDE_WPILIB_CLASSES;NOMINMAX;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;QT_NO_DEBUG;NDEBUG;QT_CHARTS_LIB;QT_CORE_LIB;QT_DATAVISUALIZATION_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;%(PreprocessorDefinitions)</Define>
+    </QtMoc>
+    <QtUic>
+      <ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription>
+      <OutputFile>.\GeneratedFiles\ui_%(Filename).h</OutputFile>
+    </QtUic>
+    <QtRcc>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <OutputFile>.\GeneratedFiles\qrc_%(Filename).cpp</OutputFile>
+    </QtRcc>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>CTR_EXCLUDE_WPILIB_CLASSES;NOMINMAX;QT_NO_DEBUG;NDEBUG;UNICODE;_UNICODE;WIN32;WIN64;QT_CHARTS_LIB;QT_CORE_LIB;QT_DATAVISUALIZATION_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\GeneratedFiles;.;.\include;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCharts;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtDataVisualization;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWidgets;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalDependencies>qtmain.lib;libzmq.lib;Qt5Charts.lib;Qt5Core.lib;Qt5DataVisualization.lib;Qt5Gui.lib;Qt5Widgets.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <TargetMachine>MachineX64</TargetMachine>
+      <AdditionalOptions> /SUBSYSTEM:WINDOWS</AdditionalOptions>
+    </Link>
+    <QtMoc>
+      <OutputFile>.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</OutputFile>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <IncludePath>.\GeneratedFiles;.;.\include;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCharts;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtDataVisualization;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWidgets;%(AdditionalIncludeDirectories)</IncludePath>
+      <Define>CTR_EXCLUDE_WPILIB_CLASSES;NOMINMAX;QT_NO_DEBUG;NDEBUG;UNICODE;_UNICODE;WIN32;WIN64;QT_CHARTS_LIB;QT_CORE_LIB;QT_DATAVISUALIZATION_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;%(PreprocessorDefinitions)</Define>
+    </QtMoc>
+    <QtUic>
+      <ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription>
+      <OutputFile>.\GeneratedFiles\ui_%(Filename).h</OutputFile>
+    </QtUic>
+    <QtRcc>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <OutputFile>.\GeneratedFiles\qrc_%(Filename).cpp</OutputFile>
+    </QtRcc>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\CodeBase\Generic\BaseObjects\Components\Team271_I2C.cpp" />
+    <ClCompile Include="..\..\CodeBase\Generic\BaseObjects\Components\Team271_IO.cpp" />
+    <ClCompile Include="..\..\CodeBase\Generic\BaseObjects\Components\Team271_Motor.cpp" />
+    <ClCompile Include="..\..\CodeBase\Generic\BaseObjects\Components\Team271_PCM.cpp" />
+    <ClCompile Include="..\..\CodeBase\Generic\BaseObjects\Components\Team271_PDP.cpp" />
+    <ClCompile Include="..\..\CodeBase\Generic\BaseObjects\Components\Team271_PWM.cpp" />
+    <ClCompile Include="..\..\CodeBase\Generic\BaseObjects\Components\Team271_Solenoid.cpp" />
+    <ClCompile Include="..\..\CodeBase\Generic\BaseObjects\Components\Team271_SPI.cpp" />
+    <ClCompile Include="..\..\CodeBase\Generic\BaseObjects\Sensors\Team271_EM7180.cpp" />
+    <ClCompile Include="..\..\CodeBase\Generic\BaseObjects\Sensors\Team271_IMU.cpp" />
+    <ClCompile Include="..\..\CodeBase\Generic\BaseObjects\Sensors\Team271_NavX.cpp" />
+    <ClCompile Include="..\..\CodeBase\Generic\BaseObjects\Sensors\Team271_Sensor.cpp" />
+    <ClCompile Include="..\..\CodeBase\Generic\BaseObjects\Sensors\Team271_SensorSRX.cpp" />
+    <ClCompile Include="..\..\CodeBase\Generic\BaseObjects\SubSystems\Auto\Team271_Auto.cpp" />
+    <ClCompile Include="..\..\CodeBase\Generic\BaseObjects\SubSystems\Auto\Team271_AutoAction.cpp" />
+    <ClCompile Include="..\..\CodeBase\Generic\BaseObjects\SubSystems\Auto\Team271_AutoActionList.cpp" />
+    <ClCompile Include="..\..\CodeBase\Generic\BaseObjects\SubSystems\Auto\Team271_AutoMode.cpp" />
+    <ClCompile Include="..\..\CodeBase\Generic\BaseObjects\SubSystems\Team271_Robot.cpp" />
+    <ClCompile Include="..\..\CodeBase\Generic\BaseObjects\SubSystems\Team271_Shifter.cpp" />
+    <ClCompile Include="..\..\CodeBase\Generic\BaseObjects\SubSystems\Team271_Transmission.cpp" />
+    <ClCompile Include="..\..\CodeBase\Generic\BaseObjects\Team271_Base.cpp" />
+    <ClCompile Include="..\..\CodeBase\Generic\BaseObjects\Team271_BaseManager.cpp" />
+    <ClCompile Include="..\..\CodeBase\Generic\NetworkObjects\Team271_NetworkObject.cpp" />
+    <ClCompile Include="..\..\CodeBase\Generic\Team271_Input.cpp" />
+    <ClCompile Include="..\..\CodeBase\Generic\Team271_Logger.cpp" />
+    <ClCompile Include="..\..\CodeBase\Generic\Team271_Utilities.cpp" />
+    <ClCompile Include="..\..\CodeBase\Robot\2018Updated\Auto\AutoActions\Team271_AutoActionDrive.cpp" />
+    <ClCompile Include="..\..\CodeBase\Robot\2018Updated\Auto\AutoActions\Team271_AutoActionDriveGame.cpp" />
+    <ClCompile Include="..\..\CodeBase\Robot\2018Updated\Auto\AutoActions\Team271_AutoActionLadder.cpp" />
+    <ClCompile Include="..\..\CodeBase\Robot\2018Updated\Auto\AutoModes\Auto0.cpp" />
+    <ClCompile Include="..\..\CodeBase\Robot\2018Updated\Auto\AutoModes\Auto1.cpp" />
+    <ClCompile Include="..\..\CodeBase\Robot\2018Updated\Auto\AutoModes\Auto2.cpp" />
+    <ClCompile Include="..\..\CodeBase\Robot\2018Updated\Auto\AutoModes\Auto3.cpp" />
+    <ClCompile Include="..\..\CodeBase\Robot\2018Updated\Auto\AutoModes\Auto4.cpp" />
+    <ClCompile Include="..\..\CodeBase\Robot\2018Updated\Auto\AutoModes\Auto5.cpp" />
+    <ClCompile Include="..\..\CodeBase\Robot\2018Updated\Auto\AutoModes\Auto6.cpp" />
+    <ClCompile Include="..\..\CodeBase\Robot\2018Updated\Auto\AutoModes\Auto7.cpp" />
+    <ClCompile Include="..\..\CodeBase\Robot\2018Updated\Auto\AutoModes\Auto8.cpp" />
+    <ClCompile Include="..\..\CodeBase\Robot\2018Updated\Auto\AutoModes\Auto9.cpp" />
+    <ClCompile Include="..\..\CodeBase\Robot\2018Updated\Shifters\Team271_Shifter_Drive.cpp" />
+    <ClCompile Include="..\..\CodeBase\Robot\2018Updated\Shifters\Team271_Shifter_Ladder.cpp" />
+    <ClCompile Include="..\..\CodeBase\Robot\2018Updated\SubSystems\Team271_Arm.cpp" />
+    <ClCompile Include="..\..\CodeBase\Robot\2018Updated\SubSystems\Team271_Drive.cpp" />
+    <ClCompile Include="..\..\CodeBase\Robot\2018Updated\SubSystems\Team271_Herder.cpp" />
+    <ClCompile Include="..\..\CodeBase\Robot\2018Updated\SubSystems\Team271_Ladder.cpp" />
+    <ClCompile Include="..\..\CodeBase\Robot\2018Updated\Team271_Globals.cpp" />
+    <ClCompile Include="..\..\CodeBase\Robot\2018Updated\Team271_MainLoop.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="src\RobotSim.cpp" />
+    <ClCompile Include="src\ThreadNetwork.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="RobotSim.ui" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="RobotSim.qrc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\CodeBase\Generic\BaseObjects\Components\Team271_I2C.h" />
+    <ClInclude Include="..\..\CodeBase\Generic\BaseObjects\Components\Team271_IO.h" />
+    <ClInclude Include="..\..\CodeBase\Generic\BaseObjects\Components\Team271_Motor.h" />
+    <ClInclude Include="..\..\CodeBase\Generic\BaseObjects\Components\Team271_PCM.h" />
+    <ClInclude Include="..\..\CodeBase\Generic\BaseObjects\Components\Team271_PDP.h" />
+    <ClInclude Include="..\..\CodeBase\Generic\BaseObjects\Components\Team271_PWM.h" />
+    <ClInclude Include="..\..\CodeBase\Generic\BaseObjects\Components\Team271_Solenoid.h" />
+    <ClInclude Include="..\..\CodeBase\Generic\BaseObjects\Components\Team271_SPI.h" />
+    <ClInclude Include="..\..\CodeBase\Generic\BaseObjects\Sensors\Team271_EM7180.h" />
+    <ClInclude Include="..\..\CodeBase\Generic\BaseObjects\Sensors\Team271_IMU.h" />
+    <ClInclude Include="..\..\CodeBase\Generic\BaseObjects\Sensors\Team271_NavX.h" />
+    <ClInclude Include="..\..\CodeBase\Generic\BaseObjects\Sensors\Team271_Sensor.h" />
+    <ClInclude Include="..\..\CodeBase\Generic\BaseObjects\Sensors\Team271_SensorSRX.h" />
+    <ClInclude Include="..\..\CodeBase\Generic\BaseObjects\SubSystems\Auto\Team271_Auto.h" />
+    <ClInclude Include="..\..\CodeBase\Generic\BaseObjects\SubSystems\Auto\Team271_AutoAction.h" />
+    <ClInclude Include="..\..\CodeBase\Generic\BaseObjects\SubSystems\Auto\Team271_AutoActionList.h" />
+    <ClInclude Include="..\..\CodeBase\Generic\BaseObjects\SubSystems\Auto\Team271_AutoMode.h" />
+    <ClInclude Include="..\..\CodeBase\Generic\BaseObjects\SubSystems\Team271_Robot.h" />
+    <ClInclude Include="..\..\CodeBase\Generic\BaseObjects\SubSystems\Team271_Shifter.h" />
+    <ClInclude Include="..\..\CodeBase\Generic\BaseObjects\SubSystems\Team271_Transmission.h" />
+    <ClInclude Include="..\..\CodeBase\Generic\BaseObjects\Team271_Base.h" />
+    <ClInclude Include="..\..\CodeBase\Generic\BaseObjects\Team271_BaseManager.h" />
+    <ClInclude Include="..\..\CodeBase\Generic\BaseObjects\Team271_Includes_Base.h" />
+    <ClInclude Include="..\..\CodeBase\Generic\NetworkObjects\Team271_NetworkObject.h" />
+    <ClInclude Include="..\..\CodeBase\Generic\Team271_Includes_Generic.h" />
+    <ClInclude Include="..\..\CodeBase\Generic\Team271_Input.h" />
+    <ClInclude Include="..\..\CodeBase\Generic\Team271_Logger.h" />
+    <ClInclude Include="..\..\CodeBase\Generic\Team271_Utilities.h" />
+    <ClInclude Include="..\..\CodeBase\Robot\2018Updated\Auto\AutoActions\Team271_AutoActionDrive.h" />
+    <ClInclude Include="..\..\CodeBase\Robot\2018Updated\Auto\AutoActions\Team271_AutoActionDriveGame.h" />
+    <ClInclude Include="..\..\CodeBase\Robot\2018Updated\Auto\AutoActions\Team271_AutoActionLadder.h" />
+    <ClInclude Include="..\..\CodeBase\Robot\2018Updated\Shifters\Team271_Shifter_Drive.h" />
+    <ClInclude Include="..\..\CodeBase\Robot\2018Updated\Shifters\Team271_Shifter_Ladder.h" />
+    <ClInclude Include="..\..\CodeBase\Robot\2018Updated\SubSystems\Team271_Arm.h" />
+    <ClInclude Include="..\..\CodeBase\Robot\2018Updated\SubSystems\Team271_Drive.h" />
+    <ClInclude Include="..\..\CodeBase\Robot\2018Updated\SubSystems\Team271_Herder.h" />
+    <ClInclude Include="..\..\CodeBase\Robot\2018Updated\SubSystems\Team271_Ladder.h" />
+    <ClInclude Include="..\..\CodeBase\Robot\2018Updated\Team271_Constants.h" />
+    <ClInclude Include="..\..\CodeBase\Robot\2018Updated\Team271_Globals.h" />
+    <ClInclude Include="..\..\CodeBase\Robot\2018Updated\Team271_Includes.h" />
+    <ClInclude Include="..\..\CodeBase\Robot\2018Updated\Team271_MainLoop.h" />
+    <ClInclude Include="include\Team271_Config.h" />
+    <ClInclude Include="main.h" />
+    <QtMoc Include="include\ThreadNetwork.h" />
+    <QtMoc Include="include\RobotSim.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties MocDir=".\GeneratedFiles\$(ConfigurationName)" UicDir=".\GeneratedFiles" RccDir=".\GeneratedFiles" lupdateOptions="" lupdateOnBuild="0" lreleaseOptions="" Qt5Version_x0020_Win32="MSVC17_32" Qt5Version_x0020_x64="$(DefaultQtVersion)" MocOptions="" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
